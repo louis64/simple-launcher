@@ -1,0 +1,5 @@
+db.sqlite3
+.idea/*
+*.pyc
+media/*
+apps/control/migrations/*
