@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-23 15:32+0000\n"
+"POT-Creation-Date: 2020-07-06 08:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,38 +42,68 @@ msgstr "created"
 msgid "changed"
 msgstr "changed"
 
-#: apps/control/models.py:16
+#: apps/control/models.py:15
 msgid "version"
 msgstr "version"
 
-#: apps/control/models.py:23
+#: apps/control/models.py:17
+msgid "download_auto"
+msgstr ""
+
+#: apps/control/models.py:17
+msgid "help_text"
+msgstr ""
+
+#: apps/control/models.py:19
+msgid "download_order"
+msgstr ""
+
+#: apps/control/models.py:19
+msgid "download_order_help"
+msgstr ""
+
+#: apps/control/models.py:21
+msgid "download_link"
+msgstr ""
+
+#: apps/control/models.py:21
+msgid "download_link_help"
+msgstr ""
+
+#: apps/control/models.py:42
 msgid "type_file"
 msgstr "type of file"
 
-#: apps/control/models.py:24
+#: apps/control/models.py:43
 msgid "text_content"
 msgstr "content text file"
 
-#: apps/control/models.py:26
+#: apps/control/models.py:45
 msgid "file"
 msgstr "file"
 
-#: apps/control/models.py:27
+#: apps/control/models.py:46
 msgid "is_archive"
 msgstr "is archive"
 
-#: apps/control/models.py:27
+#: apps/control/models.py:46
 msgid "is_archive_help"
 msgstr "if file is archive then extract files from archive to path_to"
 
-#: apps/control/models.py:28
+#: apps/control/models.py:47
 msgid "path_to"
 msgstr "copy file to path"
 
-#: apps/control/models.py:34
+#: apps/control/models.py:47
+#, fuzzy
+#| msgid "path_to"
+msgid "path_to_help"
+msgstr "copy file to path"
+
+#: apps/control/models.py:53
 msgid "verbose_name_plural"
 msgstr "files"
 
-#: apps/control/models.py:35
+#: apps/control/models.py:54
 msgid "verbose_name"
 msgstr "file"

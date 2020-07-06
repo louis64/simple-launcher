@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-23 15:32+0000\n"
+"POT-Creation-Date: 2020-07-06 08:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,40 +44,78 @@ msgstr "создан"
 msgid "changed"
 msgstr "изменен"
 
-#: apps/control/models.py:16
+#: apps/control/models.py:15
 msgid "version"
 msgstr "версия"
 
-#: apps/control/models.py:23
+#: apps/control/models.py:17
+msgid "download_auto"
+msgstr "Авто загрузка"
+
+#: apps/control/models.py:17
+msgid "help_text"
+msgstr ""
+"Если активно то файл будет скачан автоматически. ( возможно требуется ручная "
+"загрузка )"
+
+#: apps/control/models.py:19
+msgid "download_order"
+msgstr "Порядок загрузки"
+
+#: apps/control/models.py:19
+msgid "download_order_help"
+msgstr ""
+"Поррядок загрузки файлов. Чем меньше число тем раньше будет загружен файл."
+
+#: apps/control/models.py:21
+msgid "download_link"
+msgstr "Внешняя ссылка"
+
+#: apps/control/models.py:21
+msgid "download_link_help"
+msgstr "Если указана загруженный файл будет игнорирован"
+
+#: apps/control/models.py:42
 msgid "type_file"
 msgstr "тип файла"
 
-#: apps/control/models.py:24
+#: apps/control/models.py:43
 msgid "text_content"
 msgstr "содержимое файла"
 
-#: apps/control/models.py:26
+#: apps/control/models.py:45
 msgid "file"
 msgstr "файл"
 
-#: apps/control/models.py:27
+#: apps/control/models.py:46
 msgid "is_archive"
 msgstr "является архивом"
 
-#: apps/control/models.py:27
+#: apps/control/models.py:46
 msgid "is_archive_help"
 msgstr ""
 "если файл является архивом значит он будет распокован в папку указанную в "
 "\"копирать в\""
 
-#: apps/control/models.py:28
+#: apps/control/models.py:47
 msgid "path_to"
 msgstr "копировать в"
 
-#: apps/control/models.py:34
+#: apps/control/models.py:47
+msgid "path_to_help"
+msgstr ""
+"Путь куда будет скопирован файл или распокован архив на стороне клиента.<br> "
+"В двойных фигурных скобках указаны переменные на стороне клиента, <br>"
+"а в одинарных на стороне сервера.<br> На данный момент доступны перемнные:<br> "
+"* <b>{file_name}</b> - имя файла <br>"
+"* <b>{{install_dir}}</b> - путь к дирректории куда происходит установка<br>"
+"* <b>{{current_dir}}</b> - путь к дирректории откуда "
+"запускается скрипт"
+
+#: apps/control/models.py:53
 msgid "verbose_name_plural"
 msgstr "файлы"
 
-#: apps/control/models.py:35
+#: apps/control/models.py:54
 msgid "verbose_name"
 msgstr "файл"

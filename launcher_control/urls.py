@@ -22,8 +22,8 @@ from apps.control.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    url(r'^check/$', CheckUpdate.as_view(), name='statistic'),
-    url(r'^file/(?P<ident>[a-zA-Z\.0-9_]+)/$', GetFile.as_view(), name='statistic'),
+    url(r'^api/check/$', CheckUpdate.as_view(), name='statistic'),
+    url(r'^api/file/(?P<ident>[a-zA-Z\.0-9_]+)/$', GetFile.as_view(), name='statistic'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

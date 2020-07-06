@@ -16,9 +16,9 @@ class FileControl(models.Model):
 
     download_auto = models.BooleanField(default=True, verbose_name=_("download_auto"), help_text =_("help_text"))
 
-    download_order = models.SmallIntegerField(default=0, verbose_name=_("download_order"), help_text=_("download_order"))
+    download_order = models.SmallIntegerField(default=0, verbose_name=_("download_order"), help_text=_("download_order_help"))
 
-    download_link = models.CharField(max_length=4000, null=True, blank=True, default=None, verbose_name=_("download_link"), help_text=_("download_link"))
+    download_link = models.CharField(max_length=4000, null=True, blank=True, default=None, verbose_name=_("download_link"), help_text=_("download_link_help"))
 
     type_files = (
         ("archive", "archive"),
@@ -44,7 +44,7 @@ class FileControl(models.Model):
 
     file = models.FileField(upload_to='media/last/', verbose_name=_("file"), default=None, null=True, blank=True)
     is_archive = models.BooleanField(default=False,verbose_name=_("is_archive"), help_text=_("is_archive_help"))
-    path_to = models.CharField(max_length=255, verbose_name=_("path_to"), default='{{install_dir}}/{file_name}')
+    path_to = models.CharField(max_length=255, verbose_name=_("path_to"), default='{{install_dir}}/{file_name}', help_text=_("path_to_help"))
 
     def __str__(self):
         return "%s: %s" % (self.title, self.ident)

@@ -42,7 +42,7 @@ def md5(path_to_file):
 @admin.register(FileControl)
 class FileControlAdmin(admin.ModelAdmin):
 
-    list_display = ["title", "type_file",  "enable", "created", "changed", "download_order", "download_auto", "path_to"]
+    list_display = ["title", "type_file",  "enable", "created", "changed", "download_order", "download_auto", "path_to", "file"]
     search_fields = ["title", "ident", "comment_dev", "path_to", "text_content"]
     readonly_fields = ("created", "changed", "version")
     list_filter = ["type_file",  "enable", "download_auto"]
@@ -89,7 +89,7 @@ class FileControlAdmin(admin.ModelAdmin):
                         'fields': ("created", "changed", "version")
                     }),
                     ("О файле", {
-                        'fields': (("title", "ident"), "download_link", ("type_file", "file", "download_auto", "download_order"), "comment_dev")
+                        'fields': (("title", "ident"), "download_link", ("type_file", "file",), "download_auto", "download_order", "comment_dev")
                     }),
                     ("Параметры на стороне клиента", {
                         'fields': ("path_to", )

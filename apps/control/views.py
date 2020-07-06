@@ -34,7 +34,7 @@ class CheckUpdate(views.APIView):
                     if f["file"] is not None and f["file"] != '':
                         file_info["download_link"] = "{url_server}{media_url}{file}".format(media_url=settings.MEDIA_URL,url_server=url_server, file=f["file"])
                     else:
-                        file_info["download_link"] = "{url_server}/file/{ident}".format(url_server=url_server, ident=f["ident"])
+                        file_info["download_link"] = "{url_server}/api/file/{ident}".format(url_server=url_server, ident=f["ident"])
 
                 files_download.append(file_info)
 
